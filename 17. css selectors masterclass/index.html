@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: palevioletred;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+        /* Direct Child Selectors */
+        div > p{
+            color: blue;
+            background-color: gold;
+        }
+        /* Descendent Selectors */
+        div h2{
+            color: chartreuse;
+            background-color:gray;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        /* visit kar liya ho toh*/
+        a:visited{
+            color: yellow;
+        }
+
+        /* visit nhi kiya ho toh */
+        a:link{
+            color: green;
+        }
+
+        /* link par click karne par */
+        a:active{
+            background-color: sandybrown;
+        }
+
+        /* a ko hover karne par */
+        a:hover{
+            background-color:rgb(105, 148, 197);
+        }
+
+        /* h1 jaha first child h  */
+        h1:first-child{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>I am first</h1>
+        <h1>I am second</h1>
+        <article>
+            <h1>Hey h1 in article in div</h1>
+            <h1>Hey another h1 in article in div</h1>
+        </article>
+    </div>
+    <div class="red">
+        I am a div
+        <p>I am a para inside div</p>
+        <p>I am another para inside div</p>
+        <article>
+            <p>I am para in article in div</p>
+            <p>I am another para in article in div</p>
+        </article>
+    </div>
+    <div>
+        I am another div
+        <h2>I am a para inside div</h2>
+        <h2>I am another para inside div</h2>
+        <article>
+            <h2>I am para in article in div</h2>
+        </article>
+    </div>
+    <div id="green">
+        I am green
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+</html>

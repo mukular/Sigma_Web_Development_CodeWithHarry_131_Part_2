@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- harry ki website se padh lena aur iske baare me-->
+    <!--Order of specificity 
+    important > inline style > Id selector > Class or Attribute selector > Element Selector > Universal Selector
+    -->
+    <style>
+        h1{
+            color: aqua;
+        }
+
+        .yellow{
+            color: yellow;
+        }
+
+        .cred{
+            color: red;
+        }
+
+        /* attribute selector */
+        [data-x=a]{
+            color: brown;
+        }
+
+        .cpurple{
+            color: purple;
+        }
+
+        h2{
+            color: orangered !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: blue;" class="yellow cred cpurple">CSS Specificity</h1>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <h1 class="yellow cred" data-x="a">CSS Specificity</h1>
+        <h2 style="color: blue;" class="yellow cred cpurple">CSS Specificity</h2>
+    </div>
+</body>
+</html>

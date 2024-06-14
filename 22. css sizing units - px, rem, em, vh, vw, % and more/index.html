@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html{
+            font-size: 13px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 233px;
+            background-color: aquamarine;
+        }
+
+        .box1{
+            border: 2px solid black;
+            width: 100vw;
+            background-color: brown;
+        }
+
+        .box2{
+            border: 20px solid black;
+            width: 100vw;  /* vw means viewport ki width*/
+            background-color: yellow;
+        }
+
+        .box3{
+            box-sizing: border-box;
+            border: 20px solid blue;
+            width: 100vw;
+            background-color: pink;
+        }
+
+        .box4{
+            box-sizing: border-box;
+            border: 20px solid black;
+            width: 80vw; /* 80% of vw */
+            margin: auto; /* centre me aa jayega */
+            background-color: pink;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 20px solid red;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto; /* top bottom me 23 aur left right me auto */
+            font-size: 16px;
+            background-color: pink;
+        }
+
+        .container p{
+            font-size: 2em; /* 2 times of the size which it inherits = 2*16 = 32px */
+        }
+
+        .container2{
+            box-sizing: border-box;
+            border: 20px solid red;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            font-size: 16px;
+            background-color: pink;
+        }
+
+        .container2 p{
+            font-size: 2rem; /* 2 times of the size of root(html) = 2*13 = 26px */
+        }
+
+        .mycont{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+            /* mobile me vmin vw h aur vmax vh h
+            laptop me vmin vh h aur vmax vw h
+            matlab vmin means min(vh, vw)
+            and vmax means max(vh, vw) 
+            */
+        }
+
+        .last{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 80vh; /* matlab itni height toh rakho hi, agar content jyada ho jaye toh height badha do*/
+            /* similarly for min-width */
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+    </style>
+    <!-- width= 50% means parent ke width ki 50% kardo -->
+</head>
+<body>
+    <!-- inline elements par width waghera nhi lagti -->
+    <div class="box">
+        This is a box
+    </div>
+    <div class="box1">
+        This is a box
+    </div>
+    <div class="box2">
+        This is a box
+    </div>
+    <div class="box3">
+        This is a box
+    </div>
+    <div class="box4">
+        This is a box
+    </div>
+    <div class="container">
+        <p>    
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deserunt corrupti, alias necessitatibus a fugiat aut inventore aperiam nulla quasi laboriosam odio fuga nam exercitationem id odit blanditiis voluptatem facere nostrum facilis magni doloremque. Necessitatibus quos eos obcaecati, omnis totam tenetur saepe velit deleniti cupiditate? Magnam fugit explicabo consequatur necessitatibus deleniti ratione obcaecati atque dolorum facilis?
+        </p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, molestias!
+    </div>
+    <div class="container2">
+        <p>    
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deserunt corrupti, alias necessitatibus a fugiat aut inventore aperiam nulla quasi laboriosam odio fuga nam exercitationem id odit blanditiis voluptatem facere nostrum facilis magni doloremque. Necessitatibus quos eos obcaecati, omnis totam tenetur saepe velit deleniti cupiditate? Magnam fugit explicabo consequatur necessitatibus deleniti ratione obcaecati atque dolorum facilis?
+        </p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, molestias!
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+    <div class="last">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A error fugit architecto ratione facilis consequuntur assumenda porro repellendus obcaecati, nulla adipisci sunt dolor nam dolorum impedit nisi minus ipsam, eum quas veniam, illo rerum non aliquid. Dolores, recusandae natus minus repellat dolore officiis doloribus nemo laudantium dicta, possimus aspernatur architecto sapiente nihil neque obcaecati dignissimos omnis ipsa deserunt qui. Officia, omnis architecto rem totam in, non magni repudiandae laudantium nesciunt, ratione optio quia nemo ea voluptatum enim asperiores. Explicabo doloremque dignissimos libero eligendi, odio officia. Minima nemo corporis, eum iste amet a quia laboriosam ducimus reiciendis deserunt doloribus atque mollitia facilis aperiam quas nesciunt nisi nihil saepe ipsa culpa molestias laudantium fugiat sed. Commodi maxime provident ipsum at necessitatibus facilis cum autem dolore consequatur, quibusdam a reprehenderit excepturi similique ullam laborum asperiores sint odit magni rerum quasi, fuga cupiditate aut corrupti quas. Reprehenderit officia nostrum natus aperiam, rerum numquam amet itaque voluptas molestiae, laboriosam mollitia sit fugiat quis aliquam veniam eaque, earum asperiores eos et est non voluptate odit facere a? Ipsum, assumenda aliquid! Molestias, asperiores eum. Impedit quibusdam asperiores deleniti magni veniam alias. Adipisci iure magni voluptatum suscipit ut repellendus fugiat laboriosam. Aliquam omnis sapiente ad molestiae a officiis.
+    </div>
+</body>
+</html>
